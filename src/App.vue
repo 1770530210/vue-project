@@ -1,7 +1,6 @@
 <template>
-  <div >
+  <div id="app" >
     <element-view></element-view>
-    <!-- id="app" -->
     <!-- <h1>{{ message }}</h1>
     <nav>
       <router-link to="/">Vue Home</router-link> |
@@ -12,11 +11,10 @@
 </template>
 <!-- 模板部分，生成HTML代码 -->
 <script>
-import ElementView, { ElementView } from "./views/element/ElementView.vue";
+import ElementView from "./views/element/ElementView.vue";
 export default {
   components: { ElementView },
-  comments:{ElementView},
-  data() {
+  data() { 
     return {
       message: "Hello Vue"
     }
