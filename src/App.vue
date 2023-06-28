@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
     <h1>{{ message }}</h1>
     <nav>
       <router-link to="/">Vue Home</router-link> |
