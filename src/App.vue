@@ -1,17 +1,21 @@
 <template>
-  <div id="app">
-    
-    <h1>{{ message }}</h1>
+  <div >
+    <element-view></element-view>
+    <!-- id="app" -->
+    <!-- <h1>{{ message }}</h1>
     <nav>
       <router-link to="/">Vue Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view />
+    <router-view /> -->
   </div>
 </template>
 <!-- 模板部分，生成HTML代码 -->
 <script>
+import ElementView, { ElementView } from "./views/element/ElementView.vue";
 export default {
+  components: { ElementView },
+  comments:{ElementView},
   data() {
     return {
       message: "Hello Vue"
@@ -21,7 +25,7 @@ export default {
 </script>
 <!-- 控制模板数据来源和行为 -->
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,6 +44,6 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
 <!-- css样式部分 -->
